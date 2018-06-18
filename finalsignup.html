@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<center><h1>LOGIN FORM</h1></center>
+<center><button style="background-color:red;width:80px;height:50px;border-style:solid;border-width:4px;border-color:black;" onclick="myfunc1()"></button>
+<button style="background-color:blue;width:80px;height:50px;border-style:solid;border-width:4px;border-color:black;" onclick="myfunc2()"></button>
+<button style="width:50px;height:50px;"></button>
+<button style="background-color:green;width:80px;height:50px;border-style:solid;border-width:4px;border-color:black;" onclick="myfunc3()"></button>
+<button style="background-color:yellow;width:80px;height:50px;border-style:solid;border-width:4px;border-color:black;" onclick="myfunc4()"></button>
+<button style="width:50px;height:50px;"></button>
+<button style="background-color:magenta;width:80px;height:50px;border-style:solid;border-width:4px;border-color:black;" onclick="myfunc5()"></button>
+<button style="background-color:cyan;width:80px;height:50px;border-style:solid;border-width:4px;border-color:black;" onclick="myfunc6()" ></button>
+<button style="width:50px;height:50px;"></button>
+<button style="background-color:brown;width:80px;height:50px;border-style:solid;border-width:4px;border-color:black;" onclick="myfunc7()"></button>
+<button style="background-color:grey;width:80px;height:50px;border-style:solid;border-width:4px;border-color:black;" onclick="myfunc8()"></button><br><br>
+</center>
+<style>
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+body{
+   background-color:lightgrey;
+}
+</style>
+<body>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" uname="uname" required>
+
+    <label><b>Password</b></label><br>
+<script>
+var array=[];
+var j=0;
+var str;
+var x;
+var found_pass;
+var ar2d=[[0,0,0,0,0,0],
+           [0,0,0,0,0,0],
+           [0,0,0,0,0,0],
+            [0,0,0,0,0,0],
+             [0,0,0,0,0,0],
+             [0,0,0,0,0,0]
+            ];
+var m,n;
+var arr=["a","b","c","d","e","f"];
+for(i=0;i<6;i++)
+{
+j=Math.floor(Math.random()*5);
+temp=arr[i];
+arr[i]=arr[j];
+arr[j]=temp;
+}
+
+for(i=0;i<6;i++)
+{
+ar2d[0][i]=arr[i];
+document.write(arr[i]+"&nbsp"+"&nbsp");
+} 
+document.write("<br>");
+
+arr=["g","h","i","j","k","l"];
+for(i=0;i<6;i++)
+{
+j=Math.floor(Math.random()*5);
+temp=arr[i];
+arr[i]=arr[j];
+arr[j]=temp;
+}
+for(i=0;i<6;i++)
+{
+ar2d[1][i]=arr[i];
+document.write(arr[i]+"&nbsp"+"&nbsp"); 
+}document.write("<br>");
+
+arr=["m","n","o","p","q","r"];
+for(i=0;i<6;i++)
+{
+j=Math.floor(Math.random()*5);
+temp=arr[i];
+arr[i]=arr[j];
+arr[j]=temp;
+}
+for(i=0;i<6;i++)
+{
+ar2d[2][i]=arr[i];
+document.write(arr[i]+"&nbsp"+"&nbsp"); 
+
+}
+document.write("<br>");
+arr=["s","t","u","v","w","x"];
+for(i=0;i<6;i++)
+{
+j=Math.floor(Math.random()*5);
+temp=arr[i];
+arr[i]=arr[j];
+arr[j]=temp;
+}
+for(i=0;i<6;i++)
+{
+ar2d[3][i]=arr[i];
+document.write(arr[i]+"&nbsp"+"&nbsp"); 
+
+}
+document.write("<br>");
+
+arr=["y","z","0","1","2","3"];
+for(i=0;i<6;i++)
+{
+j=Math.floor(Math.random()*5);
+temp=arr[i];
+arr[i]=arr[j];
+arr[j]=temp;
+}
+for(i=0;i<6;i++)
+{
+ar2d[4][i]=arr[i];
+document.write(arr[i]+"&nbsp"+"&nbsp"); 
+
+}
+document.write("<br>");
+arr=["4","5","6","7","8","9"];
+for(i=0;i<6;i++)
+{
+j=Math.floor(Math.random()*5);
+temp=arr[i];
+arr[i]=arr[j];
+arr[j]=temp;
+}
+for(i=0;i<6;i++)
+{
+ar2d[5][i]=arr[i];
+document.write(arr[i]+"&nbsp"+"&nbsp"); 
+
+}
+document.write("<br>");
+j=0;
+i=0;
+
+function myfunc1()
+{
+  array[j]="r";
+ j++;
+ 
+ }
+ function myfunc2()
+{
+  array[j]="b";
+ j++;
+ }
+ function myfunc3()
+{
+ array[j]="g"; 
+ j++;
+ }
+ function myfunc4()
+{
+ array[j] ="y";
+ j++;
+ }
+ function myfunc5()
+{
+  array[j]="m"
+ j++;
+ }
+ function myfunc6()
+{
+  array[j]="c"
+ j++;
+ }
+ function myfunc7()
+{
+  array[j]="b";
+ //document.getElementById("demo").innerHTML=array[j];
+ j++;
+ }
+ function myfunc8()
+{
+  array[j]="g";
+ //document.getElementById("demo").innerHTML=array[j];
+ j++;
+ }
+function check_pass()
+{
+ //document.getElementById("demo2").innerHTML=array;
+ str=array[0]+array[1]+array[2]+array[3]+array[4]+array[5]+array[6]+array[7];
+ //document.getElementById("demo3").innerHTML=str;
+ x=document.getElementById("psww");
+// document.getElementById("demo").innerHTML=x.value;
+ var k,l,m=4;
+ var y=0,z=1,indexx=0;
+ var fir_index=0,sec_index=0;
+ var arr2=[];
+ while(m!=0)
+ {
+ for(k=0;k<6;k++)
+ {
+  for(l=0;l<6;l++)
+  {
+    if(str[y]==ar2d[k][l])
+	fir_index=k;
+	if(str[z]==ar2d[k][l])
+	sec_index=l;
+	}
+}
+arr2[indexx]=ar2d[fir_index][sec_index];
+indexx++;
+y=y+2;
+z=z+2;
+m--;
+}
+found_pass=arr2[0]+arr2[1]+arr2[2]+arr2[3];
+//document.getElementById("demo4").innerHTML=found_pass;
+ //check equal;
+ if(found_pass===x.value)
+ {
+  window.location.assign('succesful.html');
+  }
+  else
+  {
+  window.location.assign('unsuccess.html');
+  }
+  }
+</script>
+    <input type="text" placeholder="Enter Password" id="psww" required>
+        
+    <button type="button" onclick="check_pass()">Login</button>
+	<br>
+	<p id="demo4">res</p>
+	<br>
+    <input type="checkbox" checked="checked"> Remember me
+
+
+ 
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="forms.html">password?</a></span>
+ 
+</form>
+
+</body>
+</html>
